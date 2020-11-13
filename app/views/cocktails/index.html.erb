@@ -1,7 +1,8 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.theflavorbender.com/wp-content/uploads/2015/10/Witch-Heart-Halloween-Cocktail-The-Flavor-Bender-Featured-Image-SQ-3-480x270.jpg">
   <div class="container">
-    <h1>Find al the ingredients you need <strong>to create</strong> the <strong>best cocktails</strong>!</h1>
-    <%= link_to "Add a cocktail to the list", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+    <h1>Find all the ingredients you need <strong>to create</strong> the <strong>best cocktails</strong>!</h1>
+    <br>
+    <%= link_to "Add a cocktail to the list", new_cocktail_path, class: "btn-ghost" %>
   </div>
 </div>
 
@@ -9,7 +10,7 @@
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card-category">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/50x40/?cocktail');">
+        <div class="card" style="background-image: url(https://source.unsplash.com/random/300x200);">
           <div class="card-description">
             <h2><%= cocktail.name %> </h2>
           </div>
@@ -19,8 +20,8 @@
     <% end %>
   </div>
   <br>
-  
 </div>
+
 
 
 
